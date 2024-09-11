@@ -1,0 +1,126 @@
+.popup{
+    position: absolute;
+    top: 3%;
+    left: 9%;
+    width: 83%;
+    height: 91%;
+    z-index: 1000;
+    transition: 1s opacity;
+    display: flex;
+    align-items: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.type1{
+    background: url("../../../assets/img/bg/popup/popup_1.png") 0 0/100% 100% no-repeat;
+}
+
+.type2{
+    background: url("../../../assets/img/bg/popup/popup_2.png") 0 0/100% 100% no-repeat;
+}
+
+.type3{
+    background: url("../../../assets/img/bg/popup/popup_3.png") 0 0/100% 100% no-repeat;
+}
+
+.static{
+    background-color: #252E35;
+    border-radius: 50px;
+    border: 3px #fff solid;
+}
+
+.static .wrapper{
+    padding-top: 7.5%;
+    width: 100%;
+    height: 100%;
+}
+
+.type1 .wrapper{
+    height: 52.5%;
+    width: 87.5%;
+}
+
+.type2 .wrapper{
+    height: 67.5%;
+    width: 75%;
+}
+
+.type3 .wrapper{
+    height: 67.5%;
+    width: 75%;
+}
+
+@media (max-width: 1600px){
+}
+
+@media (max-width: 1400px){
+}
+
+@media (max-width: 1200px){
+}
+
+@media (max-width: 992px){
+    .popup{
+        left: 4%;
+        width: 93%;
+    }
+
+    .type1{
+        background: url("../../../assets/img/bg/popup/popup_1_mobile.png") 0 0/100% 100% no-repeat;
+    }
+    
+    .type2{
+        background: url("../../../assets/img/bg/popup/popup_2_mobile.png") 0 0/100% 100% no-repeat;
+    }
+    
+    .type3{
+        background: url("../../../assets/img/bg/popup/popup_3_mobile.png") 0 0/100% 100% no-repeat;
+    }
+
+    .type1 .wrapper{
+        height: 72%;
+        width: 78.5%;
+    }
+
+    .type2 .wrapper{
+        height: 60%;
+    }
+}
+
+@media (max-width: 875px){
+}
+
+@media (max-width: 762px){
+    .static .wrapper{
+        padding-top: 12.5%;
+    }
+}
+
+@media (max-width: 650px){
+    .popup{
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+@media (max-width: 475px){
+    .static .wrapper{
+        padding-top: 15%;
+    }
+}
+
+@media (max-width: 425px){
+    .static .wrapper{
+        padding-top: 17.5%;
+    }
+}
+
+@media (max-width: 375px){
+    .static .wrapper{
+        padding-top: 22.5%;
+    }
+}

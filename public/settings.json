@@ -1,0 +1,32 @@
+{
+    "type": 2,
+    "socialNetworks": {
+        "opensea": {
+            "isActive": false,
+            "href": "https://opensea.io/collection/Neonfrems"
+        },
+        "twitter": {
+            "isActive": true,
+            "href": "https://twitter.com/NeonFrens"
+        },
+        "discord": {
+            "isActive": false,
+            "href": "#"
+        },
+        "etherscan": {
+            "isActive": false,
+            "href": "#"
+        }
+    },
+    "walletList": {
+        "OGlist": "0x1111111111111111111111111111111111111111 0x1111111111111111111111111111111111111112",
+        "Frenslist": "0x2222222222222222222222222222222222222222"
+    },
+    "times": {
+        "OGlist": "April X @ X:XX-X:XX pm UTC.",
+        "Frenslist": "April X @ X:XX-X:XX pm UTC.",
+        "Publick": "April X @ X:XX pm UTC. Live until minted out."
+    },
+    "typeMintPortal": "OG LIST",
+    "costInOpenType": 0.01
+}

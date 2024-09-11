@@ -1,0 +1,415 @@
+.wrapper{
+    background: url("../../assets/img/bg/labs/labs.jpg") 0 0/100% 100% no-repeat;
+    position: relative;
+}
+
+.wrapper > div,
+.incubator > div{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    min-height: 100vh;
+    min-width: 100%;
+}
+
+.wrapper > div img,
+.incubator > div img{
+    width: 100%;
+    height: 100vh;
+}
+
+.terminal.mobile,
+.incubator.mobile{
+    display: none;
+}
+
+.wrapper .incubator .neonx{
+    top: 20%;
+    left: 32%;
+    height: 45%;
+    width: 32%;
+    min-width: auto;
+    min-height: auto;
+}
+
+.wrapper .incubator .neonx img{
+    border-radius: 100% 100% 35% 35%;
+    height: 100%;
+}
+
+.incubatorBtn{
+    display: block;
+    position: absolute;
+    top: 18.5%;
+    left: 31%;
+    height: 50%;
+    width: 34%;
+    border-radius: 100% 100% 10% 10%;
+    cursor: pointer;
+}
+
+.wrapper,
+.navigation{
+    filter: blur(0);
+    transition: .5s filter;
+}
+
+.unactive .wrapper,
+.unactive .navigation{
+    filter: blur(10px);
+}
+
+.home{
+    position: absolute;
+    top: 8.5%;
+    left: 7%;
+    width: 22%;
+    height: 15%;
+    border-radius: 0 25% 25% 0;
+}
+
+.close{
+    position: absolute;
+    display: block;
+    top: 12.5%;
+    left: 6%;
+    height: 9%;
+    width: 16%;
+    cursor: pointer;
+}
+
+.title{
+    font-size: 30px;
+    text-align: center;
+    max-width: 75%;
+    height: 27.5%;
+}
+
+.info{
+    padding: 1%;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.list{
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0 2%;
+}
+
+.item{
+    background-color: red;
+    height: 45%;
+    padding: 1.5%;
+    padding: .5% 17.5% 0 1%;
+}
+
+.item:nth-child(1){
+    background: url("../../assets/img/bg/stroke/stroke_1.png") 0 0/100% 100% no-repeat;
+}
+
+.item:nth-child(2){
+    background: url("../../assets/img/bg/stroke/stroke_2.png") 0 0/100% 100% no-repeat;
+}
+
+.text{
+    font-size: 34px;
+    height: 7.5%;
+}
+
+.caption{
+    color: #74FF69;
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.desc{
+    color: #fff;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.special{
+    color: #FD1313;
+    text-decoration: underline;
+}
+
+@media (max-width: 1600px){
+    .text{
+        font-size: 30px;
+    }
+
+    .title{
+        max-width: 80%;
+    }
+
+    .caption{
+        font-size: 26px;
+    }
+    
+    .desc{
+        font-size: 15px;
+    }
+
+    .item{
+        padding: .5% 15% 0 1%;
+    }
+}
+
+@media (max-width: 1400px){
+    .text{
+        font-size: 26px;
+    }
+
+    .title{
+        max-width: 85%;
+        font-size: 26px;
+        height: 22.5%;
+    }
+
+    .caption{
+        font-size: 24px;
+        margin-bottom: 5px;
+    }
+
+    .desc{
+        font-size: 14px;
+    }
+
+    .item{
+        padding: .5% 12.5% 0 1%;
+    }
+}
+
+@media (max-width: 1200px){
+    .text{
+        font-size: 20px;
+    }
+
+    .title{
+        font-size: 20px;
+        padding-top: 2.5%;
+    }
+
+    .caption{
+        font-size: 22px;
+    }
+
+    .desc{
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 992px){
+    .item:nth-child(1){
+        background: url("../../assets/img/bg/stroke/stroke_1_mobile.png") 0 0/100% 100% no-repeat;
+    }
+    
+    .item:nth-child(2){
+        background: url("../../assets/img/bg/stroke/stroke_2_mobile.png") 0 0/100% 100% no-repeat;
+    }
+
+    .close{
+        top: 7.5%;
+        left: 10%;
+        width: 24%;
+        height: 5%;
+    }
+
+    .info{
+        padding: 2%;
+    }
+
+    .title{
+        max-width: 100%;
+        font-size: 22px;
+        height: 13%;
+        padding: 0;
+    }
+
+    .text{
+        font-size: 26px;
+        text-align: center;
+        height: 12%;
+        max-width: 450px;
+    }
+
+    .item{
+        padding: 0;
+        padding-left: 2%;
+        padding-bottom: 3%;
+    }
+
+    .caption{
+        font-size: 26px;
+    }
+
+    .desc{
+        font-size: 18px;
+        line-height: 24px;
+    }
+}
+
+@media (max-width: 875px){
+    .caption{
+        font-size: 24px;
+    }
+
+    .desc{
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 762px){
+    .title{
+        font-size: 18px;
+    }
+
+    .text{
+        font-size: 22px;
+        max-width: 400px;
+        height: 10%;
+    }
+
+    .caption{
+        font-size: 22px;
+    }
+
+    .desc{
+        font-size: 14px;
+    }
+
+    .item{
+        height: 47.5%;
+        padding: .5% 0 0 2%;
+        background-color: red;
+    }
+
+    .list{
+        height: 65%;
+    }
+}
+
+@media (max-width: 650px){
+    .wrapper{
+        background: url("../../assets/img/bg/labs/labs_mobile.jpg") 0 0/100% 100% no-repeat;
+    }
+
+    .terminal.mobile,
+    .incubator.mobile{
+        display: block;
+    }
+
+    .terminal.desktop,
+    .incubator.desktop{
+        display: none;
+    }
+
+    .wrapper .incubator .neonx{
+        top: 37.5%;
+        height: 25.5%;
+        width: 57.5%;
+        left: 21%;
+    }
+
+    .animations img:nth-child(1){
+        position: absolute;
+        height: 55%;
+        left: -35.7%;
+        width: 177.5%;
+        bottom: 17.2%;
+    }
+
+    .home{
+        top: 24%;
+        left: 1.5%;
+        width: 40%;
+        height: 8.5%;
+    }
+
+    .incubatorBtn{
+        top: 37.5%;
+        left: 20%;
+        width: 60%;
+        height: 30%;
+    }
+}
+
+@media (max-width: 576px){
+    .title{
+        font-size: 14px;
+    }
+
+    .text{
+        font-size: 18px;
+        max-width: 300px;
+    }
+
+    .caption{
+        font-size: 21px;
+        margin-bottom: 5px;
+    }
+
+    .desc{
+        font-size: 13px;
+        line-height: 20px;
+    }
+}
+
+@media (max-width: 475px){
+    .caption{
+        font-size: 20px;
+    }
+
+    .title{
+        height: 13.5%;
+    }
+
+    .item{
+        height: 47.5%;
+        padding: 2%;
+    }
+
+    .text{
+        font-size: 16px;
+        max-width: 275px;
+    }
+
+    .caption{
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 425px){
+    .info{
+        padding: 0;
+    }
+
+    .desc{
+        font-size: 11px;
+        letter-spacing: 1px;
+        line-height: 14px;
+    }
+
+    .text{
+        font-size: 14px;
+        max-width: 250px;
+        height: 7.5%;
+    }
+
+    .title{
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 375px){
+    .caption{
+        font-size: 14px;
+    }
+}

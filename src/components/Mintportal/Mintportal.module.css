@@ -1,0 +1,600 @@
+.wrapper{
+    background: url("../../assets/img/bg/mintportal/mintportal.jpg") 0 0/100% 100% no-repeat;
+    position: relative;
+}
+
+.wrapper > div{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    min-height: 100vh;
+    min-width: 100%;
+}
+
+.wrapper > div img{
+    width: 100%;
+    height: 100vh;
+}
+
+.flies{
+    display: none;
+}
+
+.wrapper,
+.navigation{
+    filter: blur(0);
+    transition: .5s filter;
+}
+
+.unactive .wrapper,
+.unactive .navigation{
+    filter: blur(10px);
+}
+
+.social{
+    position: absolute;
+    top: 10%;
+    left: 22%;
+    width: 56%;
+    height: 4%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.href{
+    display: block;
+    width: 26%;
+    height: 100%;
+    cursor: pointer;
+}
+
+.href:nth-child(2){
+    width: 36%;
+}
+
+
+.href:nth-child(3){
+    width: 27.5%;
+}
+
+.form{
+    position: absolute;
+    top: 49%;
+    left: 36.75%;
+    width: 26.25%;
+    height: 44.5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 2%;
+}
+
+.title,
+.caption,
+.text,
+.text,
+.btn,
+.special,
+.result{
+    font-family: "Verdana";
+    color: #fff;
+}
+
+.title{
+    font-size: 26px;
+    text-align: center;
+    font-weight: 900;
+    text-transform: uppercase;
+    padding-bottom: 7.5%;
+    position: relative;
+}
+
+.title::before{
+    position: absolute;
+    content: "";
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 5%;
+    background-color: #fff;
+}
+
+.special{
+    color: #04F602;
+}
+
+.wrap{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 7.5%;
+    position: relative;
+    align-items: center;
+}
+
+.wrap::before{
+    position: absolute;
+    content: "";
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 5%;
+    background-color: #E14B4B;
+}
+
+.settings{
+    height: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.caption,
+.text{
+    font-size: 24px;
+}
+
+.info{
+    display: flex;
+    align-items: center;
+}
+
+.dash{
+    display: block;
+    width: 15px;
+    height: 4px;
+    background-color: #fff;
+}
+
+.text{
+    margin-left: 10px;
+    width: 50px;
+    text-align: start;
+}
+
+.btn{
+    width: 100%;
+    background-color: red;
+    height: 100%;
+    font-size: 26px;
+    font-weight: 900;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.btns{
+    width: 100%;
+    height: 15%;
+}
+
+.button{
+    position: absolute;
+    top: 25.5%;
+    left: 38%;
+    width: 23.75%;
+    height: 8%;
+    border-radius: 20%;
+    cursor: pointer;
+}
+
+.close{
+    position: absolute;
+    top: 2.5%;
+    left: 2.5%;
+    width: 5%;
+    cursor: pointer;
+}
+
+.close img{
+    width: 100%;
+}
+
+.mainList{
+    padding: 0 5%;
+    max-height: 95%;
+    overflow: auto;
+}
+
+.mainList::-webkit-scrollbar {
+    display: none;
+}
+
+.headline{
+    font-size: 36px;
+    margin-bottom: 25px;
+}
+
+.elem:nth-child(1) .headline{
+    color: #FFFF00;
+}
+
+.elem:nth-child(2) .headline{
+    color: #00FF00;
+}
+
+.elem:nth-child(3) .headline{
+    color: #00FFFF;
+}
+
+.elem{
+    margin-bottom: 50px;
+}
+
+.elem:last-child{
+    margin-bottom: 0;
+}
+
+.list{
+    padding-left: 35px;
+}
+
+.item{
+    padding-left: 35px;
+    position: relative;
+    display: flex;
+    margin-bottom: 15px;
+}
+
+.item:last-child{
+    margin-bottom: 0;
+}
+
+.item::before{
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 10px;
+    height: 10px;
+    background-color: #fff;
+    border-radius: 100%;
+    transform: translateY(-50%);
+}
+
+.main,
+.desc{
+    font-size: 22px;
+    font-family: "Verdana";
+    color: #fff;
+}
+
+.main{
+    font-weight: 900;
+    margin-right: 15px;
+    white-space: nowrap;
+}
+
+.error{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -100%);
+    background: rgba(255, 255, 255, 0.5);
+    width: 600px;
+    height: 30px;
+    border-radius: 0 0 25px 25px;
+    text-align: center;
+    padding-top: 5px;
+    transition: .5s transform;
+}
+
+.error.active{
+    transform: translate(-50%, 0);
+}
+
+.choose{
+    display: flex;
+    align-items: center;
+}
+
+.result{
+    margin: 0 5px;
+}
+
+.minus,
+.plus{
+    width: 25px;
+    cursor: pointer;
+}
+
+.minus img,
+.plus img{
+    width: 100%;
+}
+
+.btns{
+    position: relative;
+    display: block;
+}
+
+.Web3Button{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: scale(2) translate(-25%, -25%);
+    opacity: 0;
+}
+
+@media (max-width: 1600px){
+    .title{
+        font-size: 22px;
+    }
+
+    .text,
+    .caption{
+        font-size: 22px;
+    }
+
+    .headline{
+        font-size: 34px;
+    }
+
+    .main,
+    .desc{
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 1400px){
+    .title{
+        font-size: 18px;
+    }
+
+    .text,
+    .caption{
+        font-size: 20px;
+    }
+
+    .headline{
+        font-size: 32px;
+    }
+
+    .main,
+    .desc{
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 1200px){
+    .title{
+        font-size: 16px;
+    }
+
+    .text,
+    .caption{
+        font-size: 18px;
+    }
+
+    .headline{
+        font-size: 30px;
+    }
+
+    .main,
+    .desc{
+        font-size: 16px;
+    }
+
+    .result{
+        margin: 2.5px;
+    }
+}
+
+@media (max-width: 992px){
+    .wrapper{
+        background: url("../../assets/img/bg/mintportal/mintportal_mobile.jpg") 0 0/100% 100% no-repeat;
+    }
+
+    .flies{
+        display: block;
+    }
+
+    .social{
+        top: 4.5%;
+        left: 9%;
+        height: 7.5%;
+        width: 81%;
+    }
+
+    .href:nth-child(1),
+    .href:nth-child(2),
+    .href:nth-child(3){
+        width: 19%;
+    }
+
+    .button{
+        top: 19%;
+        left: 24%;
+        width: 54%;
+        height: 5.5%;
+    }
+
+    .form{
+        top: 57.5%;
+        left: 9.5%;
+        width: 81%;
+        height: 37%;
+    }
+
+    .wrap{
+        padding-bottom: 5%;
+    }
+
+    .title{
+        font-size: 30px;
+        padding-bottom: 5%;
+    }
+
+    .text,
+    .caption{
+        font-size: 26px;
+    }
+
+    .btn{
+        font-size: 38px;
+    }
+
+    .btns{
+        height: 22.5%;
+    }
+
+    .form{
+        padding: 2.5%;
+    }
+
+    .headline{
+        font-size: 24px;
+    }
+
+    .main,
+    .desc{
+        font-size: 14px;
+    }
+
+    .close{
+        width: 7.5%;
+        top: 4%;
+        left: 4%;
+    }
+
+    .list{
+        padding-left: 5px;
+    }
+
+    .item{
+        padding-left: 20px;
+    }
+
+    .result{
+        margin: 0 15px;
+        font-size: 28px;
+    }
+
+    .plus,
+    .minus{
+        width: 30px;
+    }
+
+    .text{
+        width: 55px;
+        margin-left: 50px;
+    }
+}
+
+@media (max-width: 762px){
+    .text{
+        margin-left: 25px;
+    }
+    
+}
+
+@media (max-width: 576px){
+    .form{
+        padding: 3%;
+    }
+
+    .title{
+        font-size: 20px;
+    }
+
+    .btn{
+        font-size: 32px;
+    }
+
+    .btns{
+        height: 20%;
+    }
+
+    .text,
+    .caption{
+        font-size: 24px;
+    }
+
+    .dash{
+        width: 10px;
+        height: 3px;
+    }
+
+    .headline{
+        font-size: 20px;
+    }
+
+    .main,
+    .desc{
+        font-size: 12px;
+    }
+
+    .main{
+        margin-right: 5px;
+    }
+
+    .plus,
+    .minus{
+        width: 20px;
+    }
+
+    .result{
+        font-size: 24px;
+    }
+
+    .text{
+        margin-left: 15px;
+    }
+}
+
+@media (max-width: 475px){
+    .item:before{
+        top: 7.5%;
+        transform: translateY(0);
+    }
+
+    .desc{
+        line-height: 20px;
+        margin: -5px 0;
+    }
+
+    .result{
+        margin: 0 10px;
+    }
+}
+
+@media (max-width: 425px){
+    .title{
+        font-size: 17px;
+    }
+
+    .text,
+    .caption{
+        font-size: 16px;
+    }
+
+    .btn{
+        font-size: 26px;
+    }
+
+    .btns{
+        height: 20%;
+    }
+
+    .close{
+        width: 10%;
+    }
+
+    .text{
+        width: 35px;
+    }
+
+    .result{
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 375px){
+    .btn{
+        font-size: 20px;
+    }
+
+    .close{
+        top: 5%;
+        left: 5%;
+        width: 12.5%;
+    }
+}
